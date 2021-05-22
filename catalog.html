@@ -11,9 +11,9 @@
         <img src="https://via.placeholder.com/160x65" width="160" height="65" alt="Логотип Nerd's">
       </a>
       <ul>
-        <li><a href="blank.html">Студия</a></li>
+        <li><a href="index.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li><a>Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
       <a href="blank.html">Корзина</a>
@@ -25,9 +25,20 @@
       <h2>Фильтр шаблонов</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <label for="filter-price">Стоимость:</label>
-          <!-- На самом деле тут не подходит range, но я подумаю об этом позже -->
-          <input type="range" id="filter-price" name="price" min="0" max="15000" value="0">
+          <legend>Стоимость:</legend>
+          <div>
+            <div>
+              <!-- Тут будет выбор из диапазона -->
+            </div>
+            <div>
+              <label>
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label>
+                до <input type="number" name="max-price" value="15000">
+              </label>
+            </div>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Сетка:</legend>
@@ -102,72 +113,54 @@
       <h2>Список шаблонов</h2>
       <ul>
         <li>
-          <a href="#">
-            <h3>Sedona</h3>
-            <!-- Шапка элемента, как в macos -->
+          <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Sedona">
+          <div>
+            <a href="#">Sedona</a>
             <p>Информационный сайт для туристов</p>
-            <p>
-              <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Sedona">
-            </p>
-          </a>
-          <button type="button">9900 ₽</button>
+            <button type="button">9900 ₽</button>
+          </div>
         </li>
         <li>
-          <a href="#">
-            <h3>Pink App</h3>
-            <!-- Шапка элемента, как в macos -->
+          <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Pink App">
+          <div>
+            <a href="#">Pink App</a>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <p>
-              <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Pink App">
-            </p>
-          </a>
-          <button type="button">9900 ₽</button>
+            <button type="button">9900 ₽</button>
+          </div>
         </li>
         <li>
-          <a href="#">
-            <h3>Barbershop</h3>
-            <!-- Шапка элемента, как в macos -->
+          <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Barbershop">
+          <div>
+            <a href="#">Barbershop</a>
             <p>Сайт салона красоты. Для мужчин, да.</p>
-            <p>
-              <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Barbershop">
-            </p>
-          </a>
-          <button type="button">9900 ₽</button>
+            <button type="button">9900 ₽</button>
+          </div>
         </li>
         <li>
-          <a href="#">
-            <h3>Mishka</h3>
-            <!-- Шапка элемента, как в macos -->
+          <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Mishka">
+          <div>
+            <a href="#">Mishka</a>
             <p>Интернет-магазин вязаных игрушек</p>
-            <p>
-              <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Mishka">
-            </p>
-          </a>
-          <button type="button">9900 ₽</button>
+            <button type="button">9900 ₽</button>
+          </div>
         </li>
         <li>
-          <a href="#">
-            <h3>A Plus</h3>
-            <!-- Шапка элемента, как в macos -->
+          <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="A Plus">
+          <div>
+            <a href="#">A Plus</a>
             <p>Лендинг курсов повышения квалификации</p>
-            <p>
-              <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="A Plus">
-            </p>
-          </a>
-          <button type="button">9900 ₽</button>
+            <button type="button">9900 ₽</button>
+          </div>
         </li>
         <li>
-          <a href="#">
-            <h3>Кваст</h3>
-            <!-- Шапка элемента, как в macos -->
+          <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Kvast">
+          <div>
+            <a href="#">Кваст</a>
             <p>Промо-сайт производителя крафтового кваса</p>
-            <p>
-              <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Kvast">
-            </p>
-          </a>
-          <button type="button">9900 ₽</button>
+            <button type="button">9900 ₽</button>
+          </div>
+            <h3>Кваст</h3>
         </li>
-
       </ul>
       <ul>
         <li>
