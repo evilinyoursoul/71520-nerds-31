@@ -128,7 +128,26 @@
       <p>наб. Реки Карповки,
       <br>5 лит П, Санкт-Петербург</p>
       <a href="tel:+78005558628">+7 800 555-86-28</a>
-      <button type="button">Напишите нам</button>
+      <a href="nowhere" hidden>Напишите нам</a>
+      <section>
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="name-field">Ваше имя:</label>
+            <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="email-field">Ваш email:</label>
+            <input id="email-field" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="comment-field">Текст письма:</label>
+            <textarea name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+        <button type="button">Закрыть</button>
+      </section>
       <img src="img/map.png" width="1440" height="415" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
     </section>
   </main>
@@ -158,24 +177,5 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
-  <section>
-    <h2>Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="name-field">Ваше имя:</label>
-        <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="email-field">Ваш email:</label>
-        <input id="email-field" type="email" name="email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="comment-field">Текст письма:</label>
-        <textarea name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea>
-      </p>
-      <button type="submit">Отправить</button>
-    </form>
-    <button type="button">Закрыть</button>
-  </section>
 </body>
 </html>
