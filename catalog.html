@@ -33,7 +33,7 @@
   </header>
   <main class="container">
     <h1>Магазин готовых шаблонов</h1>
-    <section>
+    <section class="filter">
       <h2>Фильтр шаблонов</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
@@ -97,21 +97,21 @@
         <button class="button button-filter" type="submit">Показать</button>
       </form>
     </section>
-    <section>
+    <section class="sort">
       <h2>Сортировка</h2>
       <p>Сортировать:</p>
-      <ul>
-        <li>
+      <ul class="sort-list">
+        <li class="sorting-item">
           <a>По цене</a>
         </li>
-        <li>
+        <li class="sorting-item">
           <a href="#nowhere">По типу</a>
         </li>
-        <li>
+        <li class="sorting-item">
           <a href="#nowhere">По названию</a>
         </li>
       </ul>
-      <div>
+      <div class="sort-order">
         <!-- Кнопки сортировки asc desc -->
         <a>
           <span>По убыванию</span>
@@ -121,9 +121,9 @@
         </a>
       </div>
     </section>
-    <section>
+    <section class="catalog">
       <h2>Список шаблонов</h2>
-      <ul>
+      <ul class="catalog-list">
         <li>
           <div>
             <a href="#nowhere"><h3>Sedona</h3></a>
@@ -132,7 +132,7 @@
           </div>
           <img src="img/img-sedona.jpg" width="359" height="578" alt="Превью шаблона Sedona">
         </li>
-        <li>
+        <li class="catalog-item">
           <div>
             <a href="#nowhere"><h3>Pink App</h3></a>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -140,7 +140,7 @@
           </div>
           <img src="img/img-pink.jpg" width="359" height="578" alt="Превью шаблона Pink App">
         </li>
-        <li>
+        <li class="catalog-item">
           <div>
             <a href="#nowhere"><h3>Barbershop</h3></a>
             <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -148,7 +148,7 @@
           </div>
           <img src="img/img-barbershop.jpg" width="359" height="578" alt="Превью шаблона Barbershop">
         </li>
-        <li>
+        <li class="catalog-item">
           <div>
             <a href="#nowhere"><h3>Mishka</h3></a>
             <p>Интернет-магазин вязаных игрушек</p>
@@ -156,7 +156,7 @@
           </div>
           <img src="img/img-mishka.jpg" width="359" height="578" alt="Превью шаблона Mishka">
         </li>
-        <li>
+        <li class="catalog-item">
           <div>
             <a href="#nowhere"><h3>A Plus</h3></a>
             <p>Лендинг курсов повышения квалификации</p>
@@ -164,7 +164,7 @@
           </div>
           <img src="img/img-aplus.jpg" width="359" height="578" alt="Превью шаблона A Plus">
         </li>
-        <li>
+        <li class="catalog-item">
           <div>
             <a href="#nowhere"><h3>Кваст</h3></a>
             <p>Промо-сайт производителя крафтового кваса</p>
@@ -173,34 +173,35 @@
           <img src="img/img-kvast.jpg" width="359" height="578" alt="Превью шаблона Kvast">
         </li>
       </ul>
-      <ul>
-        <li hidden>
+      <ul class="pagintaion-list">
+        <!-- Интересно, стили должны быть у элементов списка или у кнопок... -->
+        <li class="pagination-item" hidden>
           <a class="button button-filter button-back">Предыдущая</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a class="button button-filter button-numbers">1</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a class="button button-filter button-numbers" href="#nowhere">2</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a class="button button-filter button-numbers" href="#nowhere">3</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a class="button button-filter button-next" href="#nowhere">Следующая</a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="contacts">
       <h2>Контакты</h2>
       <p>NЁRDS DESIGN STUDIO</p>
       <p>наб. Реки Карповки,<br>
       5 лит П, Санкт-Петербург</p>
-      <a href="tel:+78005558628">+7 800 555-86-28</a>
+      <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
       <a class="button" href="#nowhere" hidden>Напишите нам</a>
-      <section>
+      <section class="write_us">
         <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="write_us-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="name-field">Ваше имя:</label>
             <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
@@ -215,7 +216,7 @@
           </p>
           <button type="submit">Отправить</button>
         </form>
-        <button type="button" hidden>Закрыть</button>
+        <button class="modal-close" type="button" hidden>Закрыть</button>
       </section>
       <img src="img/map.png" width="1440" height="415" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
     </section>
