@@ -114,3 +114,9 @@ img {
 .advantages-list {
   list-style: none;
 }
+ .slogan {
+   color: var(--basic-black);
+   font-size: 55px;
+   line-height: 55px;
+   font-weight: 500;
+ }
