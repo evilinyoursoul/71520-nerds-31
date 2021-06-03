@@ -67,5 +67,50 @@
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-text);
+}
+a {
+  text-decoration: none;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main header */
+
+.main-header, .advantages {
+  background-color: var(--basic-light);
+}
+
+.main-navigation {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.cart-link {
+  color: var(--basic-black);
+}
+
+.site-navigation a:active,
+.cart-link:active {
+  opacity: 30%; /* тут надо переделать на цвет, не опасити */
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart-link:hover,
+.cart-link:focus {
+  color: var(--button); /* strange name for color */
+}
+
+/* Advantages */
+
+.advantages-list {
+  list-style: none;
 }
