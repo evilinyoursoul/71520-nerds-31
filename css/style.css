@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/roboto.woff2") format("woff2"),
+       url("../fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+       url("../fonts/robotomedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/robotobold.woff2") format("woff2"),
+       url("../fonts/robotobold.woff") format("woff");
+}
+
+/* todo: need to recheck */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-light: #EEEEEE;
+  --basic-icon:  #A6A6A6;
+  --basic-text: #283136;
+  --special-text: #444444; /* footer & placeholder */
+  --border-modal: #D7DCDE;
+  --checkbox: #4D4D4D;
+  --filter-special: #ABABAB; /* border active & range inside */
+  --address-text: #666666;
+
+  --button: #FB565A;
+  --button-hover: #E74246;
+  --button-focus: #D7373B;
+
+  --button-center: #00CA74; /* range color tooxr */
+  --button-center: #00BC6C;
+  --button-center: #00AA62;
+
+  --button-right: #EFC849 ;
+  --button-right: #EAB534;
+  --button-right: #E5A722;
+
+  --button-filer-hover: #DFDFDF;
+
+  --social: #E1E1E1;
+
+
+}
+
+.page-body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+	font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-text);
+
+}
