@@ -182,3 +182,27 @@ img {
   background-color: var(--button-right-active);
 }
 
+/* About */
+
+.about-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.about h3 {
+  color: var(--basic-black);
+  font-weight: 700;
+  text-transform: uppercase;
+ }
+
+.orders-list {
+   list-style: none;
+ }
+
+
+ /* Думаю, как стилизовать маркер
+
+ .orders-list li::marker {
+   color: var(--button);
+ } */
