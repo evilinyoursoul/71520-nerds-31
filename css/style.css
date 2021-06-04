@@ -196,13 +196,35 @@ img {
   text-transform: uppercase;
  }
 
-.orders-list {
-   list-style: none;
- }
+ .orders-list {
+  /* list-style-image: url("/img/icons/list-marker.svg"); */
+}
 
+.orders-list li {
+  background: url("/img/icons/list-marker.svg") no-repeat left center;
+}
 
  /* Думаю, как стилизовать маркер
 
  .orders-list li::marker {
    color: var(--button);
  } */
+
+.about-term {
+  line-height: 18px;
+}
+
+.about-list .number {
+  color: var(--basic-black);
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.about-list .percent {
+  color: var(--basic-black);
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+  vertical-align: top;
+}
