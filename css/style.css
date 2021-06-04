@@ -37,6 +37,7 @@
   --border-modal: #D7DCDE;
   --checkbox: #4D4D4D;
   --filter-special: #ABABAB; /* border active & range inside */
+  --border-modal-hover: #B4B9BB;
   --address-text: #666666;
 
   --button: #FB565A;
@@ -247,3 +248,63 @@ img {
 .clients-list {
   list-style: none;
 }
+
+
+/* Contacts */
+
+.contacts-title {
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 800;
+}
+
+.address {
+  color: var(--address-text);
+}
+
+.contacts-phone {
+  color: var(--address-text);
+}
+
+.write_us-title {
+  color: var(--basic-black);
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.write_us label {
+  color: var(--basic-black);
+  font-weight: 700;
+}
+
+.write_us input,
+.write_us textarea {
+  color: var(--special-text);
+  opacity: 0.5;
+  background-color: var(--basic-white);
+  line-height: 18px;
+  font: inherit;
+  border: 2px solid var(--border-modal);
+  border-radius: 3px;
+}
+
+.write_us input:hover,
+.write_us textarea:hover {
+  border-color: var(--border-modal-hover);
+}
+
+
+.write_us input:focus,
+.write_us textarea:focus {
+  opacity: 1;
+  border-color: var(--basic-black);
+}
+
+.write_us input:invalid
+.write_us textarea:invalid {
+  color: var(--button-hover);
+  border-color: var(--button-hover);
+}
+
+
