@@ -307,4 +307,20 @@ img {
   border-color: var(--button-hover);
 }
 
+/* Footer */
 
+.footer-title {
+  color: var(--basic-black);
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.main-footer {
+  color: var(--special-text);
+  line-height: 22px;
+}
+
+.social-list {
+  list-style: none;
+}
