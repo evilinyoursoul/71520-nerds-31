@@ -227,18 +227,8 @@ img {
  }
 
  .orders-list {
-  /* list-style-image: url("/img/icons/list-marker.svg"); */
+   list-style: none;
 }
-
-.orders-list li {
-  background: url("/img/icons/list-marker.svg") no-repeat left center;
-}
-
- /* Думаю, как стилизовать маркер
-
- .orders-list li::marker {
-   color: var(--button);
- } */
 
 .about-term {
   line-height: 18px;
