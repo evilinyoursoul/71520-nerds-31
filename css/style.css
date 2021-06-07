@@ -117,9 +117,12 @@ img {
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
-.cart-link:hover,
-.cart-link:focus {
+.cart-link:hover {
+  color: var(--button); /* strange name for color */
+}
+
+.site-navigation a:hover,
+.cart-link:hover {
   color: var(--button); /* strange name for color */
 }
 
@@ -160,8 +163,7 @@ img {
   border: none;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
   background-color: var(--button-hover);
 }
 
@@ -173,8 +175,7 @@ img {
   background-color: var(--button-center);
 }
 
-.button-center:hover,
-.button-center:focus {
+.button-center:hover {
   background-color: var(--button-center-hover);
 }
 
@@ -187,8 +188,7 @@ img {
   background-color: var(--button-right);
 }
 
-.button-right:hover,
-.button-right:focus {
+.button-right:hover {
   background-color: var(--button-right-hover);
 }
 
