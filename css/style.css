@@ -69,6 +69,7 @@
   font-weight: 400;
   color: var(--basic-text);
 }
+
 a {
   text-decoration: none;
 }
@@ -93,7 +94,11 @@ img {
 
 /* Main header */
 
-.main-header, .advantages {
+.main-header {
+  background-color: var(--basic-light);
+}
+
+.advantages {
   background-color: var(--basic-light);
 }
 
@@ -106,22 +111,34 @@ img {
   list-style: none;
 }
 
-.site-navigation a,
+.site-navigation a {
+  color: var(--basic-black);
+}
+
 .cart-link {
   color: var(--basic-black);
 }
 
-.site-navigation a:active,
+.site-navigation a:active {
+  opacity: 30%; /* тут надо переделать на цвет, не опасити */
+}
+
 .cart-link:active {
   opacity: 30%; /* тут надо переделать на цвет, не опасити */
 }
 
-.site-navigation a:hover,
+.site-navigation a:hover {
+  color: var(--button); /* strange name for color */
+}
+
 .cart-link:hover {
   color: var(--button); /* strange name for color */
 }
 
-.site-navigation a:hover,
+.site-navigation a:hover {
+  color: var(--button); /* strange name for color */
+}
+
 .cart-link:hover {
   color: var(--button); /* strange name for color */
 }
@@ -182,7 +199,6 @@ img {
 .button-center:active {
   background-color: var(--button-center-active);
 }
-
 
 .button-right {
   background-color: var(--button-right);
@@ -249,7 +265,6 @@ img {
   list-style: none;
 }
 
-
 /* Contacts */
 
 .contacts-title {
@@ -293,7 +308,6 @@ img {
 .write_us textarea:hover {
   border-color: var(--border-modal-hover);
 }
-
 
 .write_us input:focus,
 .write_us textarea:focus {
