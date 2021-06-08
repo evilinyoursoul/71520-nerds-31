@@ -76,6 +76,10 @@ img {
   height: auto;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -108,7 +112,7 @@ img {
   list-style: none;
 }
 
-.site-navigation a {
+.site-navigation-link {
   color: var(--basic-black);
 }
 
@@ -116,7 +120,7 @@ img {
   color: var(--basic-black);
 }
 
-.site-navigation a:active {
+.site-navigation-link:active {
   opacity: 30%; /* тут надо переделать на цвет, не опасити */
 }
 
@@ -124,7 +128,7 @@ img {
   opacity: 30%; /* тут надо переделать на цвет, не опасити */
 }
 
-.site-navigation a:hover {
+.site-navigation-link:hover {
   color: var(--button); /* strange name for color */
 }
 
@@ -132,7 +136,7 @@ img {
   color: var(--button); /* strange name for color */
 }
 
-.site-navigation a:hover {
+.site-navigation-link:hover {
   color: var(--button); /* strange name for color */
 }
 
@@ -159,7 +163,7 @@ img {
   list-style: none;
 }
 
-.services-list h3 {
+.service-list_header {
   color: var(--basic-black);
   font-size: 24px;
   line-height: 30px;
@@ -218,7 +222,9 @@ img {
   font-weight: 500;
 }
 
-.about h3 {
+/* Ерунда какая-то, about-title, about_header... */
+
+.about_header {
   color: var(--basic-black);
   font-weight: 700;
   text-transform: uppercase;
@@ -232,14 +238,14 @@ img {
   line-height: 18px;
 }
 
-.about-list .number {
+.about-list_number {
   color: var(--basic-black);
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
 }
 
-.about-list .percent {
+.about-list_percent {
   color: var(--basic-black);
   font-size: 26px;
   line-height: 40px;
@@ -268,7 +274,6 @@ img {
 
 .contacts-phone {
   color: var(--address-text);
-  text-decoration: none;
 }
 
 .write_us-title {
@@ -282,8 +287,8 @@ img {
   font-weight: 700;
 }
 
-.write_us input,
-.write_us textarea {
+.write_us-input,
+.write_us-textarea {
   color: var(--special-text);
   opacity: 0.5;
   background-color: var(--basic-white);
@@ -293,19 +298,19 @@ img {
   border-radius: 3px;
 }
 
-.write_us input:hover,
-.write_us textarea:hover {
+.write_us-input:hover,
+.write_us-textarea:hover {
   border-color: var(--border-modal-hover);
 }
 
-.write_us input:focus,
-.write_us textarea:focus {
+.write_us-input:focus,
+.write_us-textarea:focus {
   opacity: 1;
   border-color: var(--basic-black);
 }
 
-.write_us input:invalid,
-.write_us textarea:invalid {
+.write_us-input:invalid,
+.write_us-textarea:invalid {
   color: var(--button-hover);
   border-color: var(--button-hover);
 }
