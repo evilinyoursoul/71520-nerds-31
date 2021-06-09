@@ -39,7 +39,7 @@
       <h2 class="visually-hidden">Фильтр шаблонов</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="fieldset">
-          <legend>Стоимость:</legend>
+          <legend class="filter_legend">Стоимость:</legend>
           <div>
             <div>
               <!-- Тут будет выбор из диапазона -->
@@ -55,8 +55,8 @@
           </div>
         </fieldset>
         <fieldset class="fieldset">
-          <legend>Сетка:</legend>
-          <ul>
+          <legend class="filter_legend">Сетка:</legend>
+          <ul class="filter-list">
             <li>
               <input type="radio" name="layout-type" value="adaptive" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
@@ -72,8 +72,8 @@
           </ul>
         </fieldset>
         <fieldset class="fieldset">
-          <legend>Особенности:</legend>
-          <ul>
+          <legend class="filter_legend">Особенности:</legend>
+          <ul class="filter-list">
             <li>
               <input type="checkbox" name="features" id="filter-slider" value="slider" checked>
               <label for="filter-slider">Слайдер</label>

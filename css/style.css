@@ -340,7 +340,7 @@ img {
 
 /* Filters */
 
-.filter legend {
+.filter_legend {
   color: var(--basic-black);
   font-size: 18px;
   line-height: 30px;
@@ -362,13 +362,12 @@ img {
   text-transform: uppercase;
 }
 
-.filter ul {
+.filter-list {
   line-height: 20px;
   list-style: none;
 }
 
 /* Sort */
-
 
 .sort-title {
   color: var(--basic-black);
