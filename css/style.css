@@ -55,7 +55,9 @@
   --button-right-hover: #eab534;
   --button-right-active: #e5a722;
 
-  --button-filer-hover: #dfdfdf;
+  --button-filter-hover: #dfdfdf;
+  --button-filter-active: #d5d5d5;
+  --border-button-numbers: #dbdbdb;
 
   --social: #e1e1e1;
 }
@@ -335,3 +337,127 @@ img {
 
 /* Catalog */
 
+.page-title {
+  color: var(--basic-black);
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  background-color: var(--basic-light);
+}
+
+/* Filters */
+
+.filter legend {
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.fieldset {
+  border: none;
+}
+
+.range-from {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.range-to {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter ul {
+  line-height: 20px;
+  list-style: none;
+}
+
+/* Sort */
+
+
+.sort-title {
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sorting-item-link {
+  color: var(--basic-black);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.sorting-item-link:hover {
+  opacity: 0.6;
+}
+
+.sorting-item-link:active {
+  opacity: 1;
+}
+
+/* Catalog */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item_title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catalog-item_title_link {
+  color: var(--basic-black);
+}
+
+.catalog-item_title_link:hover {
+  color: var(--button);
+}
+
+.catalog-item_title_link:active {
+  opacity: 30%; /* тут надо переделать на цвет, не опасити */
+}
+
+.catalog-item_text {
+  color: var(--address-text);
+  line-height: 18px;
+}
+
+/* Pagination */
+
+.pagintaion-list {
+  list-style: none;
+}
+
+.button-filter {
+  color: var(--basic-black);
+  background-color: var(--basic-light);
+}
+
+.button-filter:hover {
+  background-color: var(--button-filter-hover);
+}
+
+.button-filter:active {
+  opacity: 0.3; /* опять нужен цвет */
+  background-color: var(--button-filter-active);
+}
+
+.button-number_current {
+  background-color: var(--basic-white);
+  border: 3px solid;
+  border-radius: 3px;
+  border-color: var(--border-button-numbers);
+}
