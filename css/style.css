@@ -32,6 +32,7 @@
 
 :root {
   --basic-black: #000000;
+  --basic-black-opacity-30: rgba(0, 0, 0, 0.3);
   --basic-white: #ffffff;
   --basic-light: #eeeeee;
   --basic-icon: #a6a6a6;
@@ -122,28 +123,20 @@ img {
   color: var(--basic-black);
 }
 
+.site-navigation-link:hover {
+  color: var(--button); /* strange name for color */
+}
+
+.cart-link:hover {
+  color: var(--button); /* strange name for color */
+}
+
 .site-navigation-link:active {
-  opacity: 30%; /* тут надо переделать на цвет, не опасити */
+  color: var(--basic-black-opacity-30);
 }
 
 .cart-link:active {
-  opacity: 30%; /* тут надо переделать на цвет, не опасити */
-}
-
-.site-navigation-link:hover {
-  color: var(--button); /* strange name for color */
-}
-
-.cart-link:hover {
-  color: var(--button); /* strange name for color */
-}
-
-.site-navigation-link:hover {
-  color: var(--button); /* strange name for color */
-}
-
-.cart-link:hover {
-  color: var(--button); /* strange name for color */
+  color: var(--basic-black-opacity-30);
 }
 
 /* Advantages */
@@ -427,7 +420,7 @@ img {
 }
 
 .catalog-item_title_link:active {
-  opacity: 30%; /* тут надо переделать на цвет, не опасити */
+  color: var(--basic-black-opacity-30);
 }
 
 .catalog-item_text {
@@ -451,7 +444,7 @@ img {
 }
 
 .button-filter:active {
-  opacity: 0.3; /* опять нужен цвет */
+  color: var(--basic-black-opacity-30);
   background-color: var(--button-filter-active);
 }
 
