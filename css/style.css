@@ -163,6 +163,8 @@ img {
 
 .advantages-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .slogan {
@@ -170,9 +172,16 @@ img {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  padding-top: 78px;
+  margin: 0;
 }
 
 /* Services */
+
+.services {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 
 .services-list {
   list-style: none;
@@ -241,6 +250,9 @@ img {
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 40px;
+
+  margin-top: 39px;
+  margin-bottom: 73px;
 }
 
 .about-title {
