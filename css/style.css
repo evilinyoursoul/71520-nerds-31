@@ -175,7 +175,8 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 100px;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .service-list_header {
@@ -270,8 +271,19 @@ img {
 
 /* Clients */
 
+.clients {
+  min-height: 184px;
+}
+
 .clients-list {
   list-style: none;
+  text-align: center;
+  /* todo: выравнять картинки по высоте */
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0;
+  margin: auto;
 }
 
 /* Contacts */
