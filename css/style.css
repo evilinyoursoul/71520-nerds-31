@@ -368,16 +368,23 @@ img {
 
 /* Footer */
 
+.main-footer {
+  color: var(--special-text);
+  line-height: 22px;
+}
+
 .footer-title {
   color: var(--basic-black);
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
+  padding: 75px 0 10px 0;
+  margin: 0;
 }
 
-.main-footer {
-  color: var(--special-text);
-  line-height: 22px;
+.footer-text {
+  padding: 0 0 75px;
+  margin: 0;
 }
 
 .container-footer {
@@ -387,6 +394,8 @@ img {
 
 .social-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Catalog */
