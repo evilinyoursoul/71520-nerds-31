@@ -332,6 +332,10 @@ img {
 
 /* Contacts */
 
+.contacts {
+  grid-column: 1 / -1;
+}
+
 .contacts-title {
   color: var(--basic-black);
   font-size: 18px;
@@ -399,7 +403,6 @@ img {
   font-weight: 700;
   padding-bottom: 10px;
   margin: 0;
-
 }
 
 .footer-text {
@@ -421,12 +424,19 @@ img {
 
 /* Catalog */
 
+.container-catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+}
+
 .page-title {
   color: var(--basic-black);
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   background-color: var(--basic-light);
+  grid-column: 1 / -1;
 }
 
 /* Filters */
@@ -492,6 +502,8 @@ img {
 
 .catalog-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .catalog-item_title {
