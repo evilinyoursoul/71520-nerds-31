@@ -38,6 +38,7 @@
   --basic-icon: #a6a6a6;
   --basic-text: #283136;
   --special-text: #444444; /* footer & placeholder */
+  --special-text-opacity-50: rgba(4, 4, 4, 0.5);
   --border-modal: #d7dcde;
   --checkbox: #4d4d4d;
   --filter-special: #ababab; /* border active & range inside */
@@ -352,11 +353,10 @@ img {
 
 .write_us-input,
 .write_us-textarea {
-  color: var(--special-text);
-  opacity: 0.5;
+  color: var(--special-text-opacity-50);
   background-color: var(--basic-white);
-  line-height: 18px;
   font: inherit;
+  line-height: 18px;
   border: 2px solid var(--border-modal);
   border-radius: 3px;
 }
@@ -368,7 +368,7 @@ img {
 
 .write_us-input:focus,
 .write_us-textarea:focus {
-  opacity: 1;
+  color: var(--special-text);
   border-color: var(--basic-black);
 }
 
