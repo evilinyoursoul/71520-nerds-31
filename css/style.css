@@ -429,6 +429,7 @@ img {
 .container-catalog {
   display: grid;
   grid-template-columns: 260px 1fr;
+  column-gap: 140px;
   align-content: start;
 }
 
@@ -442,11 +443,6 @@ img {
 }
 
 /* Filters */
-
-.filter {
-  margin-right: 140px;
-}
-
 .filter_legend {
   color: var(--basic-black);
   font-size: 18px;
@@ -518,6 +514,10 @@ img {
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
   row-gap: 30px;
+}
+
+.catalog-item {
+  width: 360px;
 }
 
 .catalog-item_title {
