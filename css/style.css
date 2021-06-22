@@ -138,17 +138,38 @@ img {
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .site-navigation-link {
+  display: block;
+  padding: 26px 22px 9px 23px;
   color: var(--basic-black);
+}
+
+.cart {
+  padding: 26px 22px 9px 23px;
+}
+
+.cart-link::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -45px;
+  width: 15px;
+  height: 15px;
+  background-image: url("/img/icons/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .cart-link {
   color: var(--basic-black);
+  position: relative;
 }
 
 .site-navigation-link:hover {
