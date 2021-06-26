@@ -231,12 +231,15 @@ img {
 .button {
   font: inherit;
   font-weight: 500;
+  line-height: 18px;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
   background-color: var(--button);
   border: none;
+  padding: 17px 40px 15px 39px;
+  border-radius: 3px;
 }
 
 .button:hover {
