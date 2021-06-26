@@ -539,6 +539,7 @@ img {
 .container-footer {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  column-gap: 139px;
   margin-top: 68px;
   margin-bottom: 68px;
 }
@@ -547,8 +548,20 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--social);
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+}
 /* Catalog */
 
 .container-catalog {
@@ -573,6 +586,7 @@ img {
 }
 
 /* Filters */
+
 .filter_legend {
   color: var(--basic-black);
   font-size: 18px;
