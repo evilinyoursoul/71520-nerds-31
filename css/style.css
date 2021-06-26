@@ -390,11 +390,28 @@ img {
   margin-bottom: 4px;
 }
 
+.about_stat {
+  display: grid;
+}
+
+.about_img {
+  order: -1;
+  width: 360;
+  height: 208;
+}
+
+.about_stat_header {
+  margin: 0;
+  padding: 0;
+}
+
 .about-term {
   line-height: 18px;
 }
 
 .about-definition {
+  margin: 0;
+  padding: 0;
   grid-row: 1 / -1;
 }
 
@@ -434,7 +451,6 @@ img {
   /* todo: выравнять картинки по высоте */
   place-items: center;
   height: 100%;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 0;
