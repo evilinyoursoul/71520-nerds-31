@@ -239,12 +239,30 @@ img {
 
 .services-list {
   list-style: none;
-
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 300px);
   grid-gap: 100px;
   padding: 0;
   margin: 0;
+}
+
+.service-item {
+  min-height: 347px;
+  background-repeat: no-repeat;
+  background-size: 300px 146px;
+  background-position: top;
+}
+
+.service-item_1 {
+  background-image: url(../img/illustration-1.jpg);
+}
+
+.service-item_2 {
+  background-image: url(../img/illustration-2.jpg);
+}
+
+.service-item_3 {
+  background-image: url(../img/illustration-3.jpg);
 }
 
 .service-list_header {
@@ -253,6 +271,14 @@ img {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  padding-top: 171px;
+  margin-bottom: 16px;
+}
+
+.service-list_text {
+  margin-bottom: 31px;
 }
 
 .button {
