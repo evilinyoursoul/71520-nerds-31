@@ -337,17 +337,26 @@ img {
 
 .about {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 40px;
-
-  margin-top: 39px;
-  margin-bottom: 73px;
+  grid-template-columns: 2fr 360px;
+  column-gap: 149px;
+  /* margin-top: 39px; */
+  margin-bottom: 74px;
 }
 
 .about-title {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  padding-top: 73px;
+}
+
+.about-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
 }
 
 /* Ерунда какая-то, about-title, about_header... */
@@ -356,10 +365,29 @@ img {
   color: var(--basic-black);
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
 }
 
 .orders-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.orders-item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.orders-item::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background: var(--button);
+  margin-right: 7px;
+  margin-bottom: 4px;
 }
 
 .about-term {
