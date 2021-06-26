@@ -276,15 +276,18 @@ img {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  padding-top: 171px;
+  padding-top: 171px; /* Коммент с вопросом. Нормальный ли вообще это план - делать такой отступ, чтобы background-image разместить? */
   margin-bottom: 16px;
 }
 
 .service-list_text {
-  margin-bottom: 31px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .button {
+  display: inline-block;
   font: inherit;
   font-weight: 500;
   line-height: 18px;
