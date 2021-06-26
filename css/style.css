@@ -151,15 +151,11 @@ img {
   color: var(--basic-black);
 }
 
-.cart {
-  padding: 26px 22px 9px 23px;
-}
-
 .cart-link::before {
   content: "";
   position: absolute;
-  top: 2px;
-  left: -45px;
+  top: 30px;
+  left: 0px;
   width: 15px;
   height: 15px;
   background-image: url("/img/icons/cart-icon.svg");
@@ -168,8 +164,10 @@ img {
 }
 
 .cart-link {
-  color: var(--basic-black);
+  display: block;
+  padding: 26px 0px 9px 40px;
   position: relative;
+  color: var(--basic-black);
 }
 
 .site-navigation-link:hover {
