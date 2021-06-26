@@ -188,6 +188,10 @@ img {
 
 /* Advantages */
 
+.advantages {
+  margin-bottom: 80px;
+}
+
 .advantages-list {
   list-style: none;
   padding: 0;
@@ -233,7 +237,6 @@ img {
 /* Services */
 
 .services {
-  margin-top: 80px;
   margin-bottom: 80px;
 }
 
