@@ -623,6 +623,34 @@ img {
   padding: 0;
 }
 
+.fieldset:first-child {
+  margin-top: 55px;
+}
+
+.price_fieldset {
+  margin-bottom: 54px;
+}
+
+.price_filter_legend {
+  margin-bottom: 48px;
+}
+
+.layout_fieldset {
+  margin-bottom: 47px;
+}
+
+.layout_filter_legend {
+  margin-bottom: 16px;
+}
+
+.features_fieldset {
+  margin-bottom: 50px;
+}
+
+.features_filter_legend {
+  margin-bottom: 16px;
+}
+
 .range-from {
   font-size: 16px;
   line-height: 22px;
@@ -641,6 +669,14 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.filter-item {
+  margin-bottom: 20px;
+}
+
+.filter-item:last-child {
+  margin-bottom: 0;
 }
 
 /* Sort */

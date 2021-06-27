@@ -44,8 +44,8 @@
       <section class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="fieldset">
-            <legend class="filter_legend">Стоимость:</legend>
+          <fieldset class="fieldset price_fieldset">
+            <legend class="filter_legend price_filter_legend">Стоимость:</legend>
             <div>
               <div>
                 <!-- Тут будет выбор из диапазона -->
@@ -60,43 +60,43 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="fieldset">
-            <legend class="filter_legend">Сетка:</legend>
+          <fieldset class="fieldset layout_fieldset">
+            <legend class="filter_legend layout_filter_legend">Сетка:</legend>
             <ul class="filter-list">
-              <li>
+              <li class="filter-item">
                 <input type="radio" name="layout-type" value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
-              <li>
+              <li class="filter-item">
                 <input type="radio" name="layout-type" value="fixed" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
-              <li>
+              <li class="filter-item">
                 <input type="radio" name="layout-type" value="rubber" id="filter-rubber">
                 <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="fieldset">
-            <legend class="filter_legend">Особенности:</legend>
+          <fieldset class="fieldset features_fieldset">
+            <legend class="filter_legend features_filter_legend">Особенности:</legend>
             <ul class="filter-list">
-              <li>
+              <li class="filter-item">
                 <input type="checkbox" name="features" id="filter-slider" value="slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
-              <li>
+              <li class="filter-item">
                 <input type="checkbox" name="features" id="filter-advantages" value="advantages">
                 <label for="filter-advantages">Блок преимуществ</label>
               </li>
-              <li>
+              <li class="filter-item">
                 <input type="checkbox" name="features" id="filter-news" value="news" checked>
                 <label for="filter-news">Новости</label>
               </li>
-              <li>
+              <li class="filter-item">
                 <input type="checkbox" name="features" id="filter-gallery" value="gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
-              <li>
+              <li class="filter-item">
                 <input type="checkbox" name="features" id="filter-basket" value="basket">
                 <label for="filter-basket">Корзина</label>
               </li>
