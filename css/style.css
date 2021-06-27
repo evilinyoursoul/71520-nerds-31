@@ -253,16 +253,34 @@ img {
   background-position: top;
 }
 
-.service-item_1 {
+.service-item_1::before {
+  content: "";
+  display: block;
   background-image: url(../img/illustration-1.jpg);
+  background-size: 300px 146px;
+  width: 300px;
+  height: 146px;
+  margin-bottom: 25px;
 }
 
-.service-item_2 {
+.service-item_2::before {
+  content: "";
+  display: block;
   background-image: url(../img/illustration-2.jpg);
+  background-size: 300px 146px;
+  width: 300px;
+  height: 146px;
+  margin-bottom: 25px;
 }
 
-.service-item_3 {
+.service-item_3::before {
+  content: "";
+  display: block;
   background-image: url(../img/illustration-3.jpg);
+  background-size: 300px 146px;
+  width: 300px;
+  height: 146px;
+  margin-bottom: 25px;
 }
 
 .service-list_header {
@@ -273,7 +291,6 @@ img {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  padding-top: 171px; /* Коммент с вопросом. Нормальный ли вообще это план - делать такой отступ, чтобы background-image разместить? */
   margin-bottom: 16px;
 }
 
