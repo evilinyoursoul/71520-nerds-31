@@ -620,6 +620,13 @@ img {
 
 /* Sort */
 
+.sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
 .sort-title {
   color: var(--basic-black);
   font-size: 18px;
@@ -630,9 +637,17 @@ img {
 
 .sort-list {
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
 }
 
 .sorting-item-link {
+  display: block;
+  padding: 5px 12px;
   color: var(--basic-black);
   font-size: 14px;
   line-height: 18px;
@@ -646,6 +661,12 @@ img {
 
 .sorting-item-link:active {
   opacity: 1;
+}
+
+.sort-order {
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
 }
 
 /* Catalog */
