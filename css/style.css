@@ -603,6 +603,7 @@ img {
   padding: 0;
   padding-top: 72px;
   padding-bottom: 108px;
+  margin-bottom: 55px;
   grid-column: 1 / -1;
 
 }
@@ -621,10 +622,6 @@ img {
   border: none;
   margin: 0;
   padding: 0;
-}
-
-.fieldset:first-child {
-  margin-top: 55px;
 }
 
 .price_fieldset {
@@ -694,6 +691,8 @@ img {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .sort-list {
