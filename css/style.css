@@ -739,6 +739,7 @@ img {
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
   row-gap: 30px;
+  margin-bottom: 54px;
 }
 
 .catalog-item {
@@ -778,6 +779,11 @@ img {
 
 .pagintaion-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
 }
 
 .button-filter {
@@ -794,9 +800,18 @@ img {
   background-color: var(--button-filter-active);
 }
 
+.button-numbers {
+  padding: 17px 20px 15px 20px;
+}
+
 .button-number_current {
   background-color: var(--basic-white);
   border: 3px solid;
   border-radius: 3px;
   border-color: var(--border-button-numbers);
+  padding: 14px 17px 12px 17px;
+}
+
+.button-next {
+  padding: 17px 77px 15px 78px;
 }
