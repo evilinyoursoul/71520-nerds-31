@@ -800,6 +800,14 @@ img {
   background-color: var(--button-filter-active);
 }
 
+.button-form {
+  padding: 17px 89px 15px 88px;
+}
+
+.button-catalog {
+  padding: 17px 72px 15px;
+}
+
 .button-numbers {
   padding: 17px 20px 15px 20px;
 }
