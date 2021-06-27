@@ -170,7 +170,7 @@ img {
   display: flex;
   gap: 25px;
   align-items: center;
-  padding: 26px 0px 9px 20px;
+  padding: 26px 0px 32px 20px;
   color: var(--basic-black);
 }
 
