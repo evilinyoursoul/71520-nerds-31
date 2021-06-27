@@ -152,11 +152,16 @@ img {
   color: var(--basic-black);
 }
 
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .cart-link::before {
   content: "";
-  position: absolute;
-  top: 30px;
-  left: 0px;
+  margin-top: 3px;
+  padding-right: 25px;
   width: 15px;
   height: 15px;
   background-image: url("/img/icons/cart-icon.svg");
@@ -165,9 +170,8 @@ img {
 }
 
 .cart-link {
-  display: block;
-  padding: 26px 0px 9px 40px;
-  position: relative;
+  display: flex;
+  padding: 26px 0px 9px 20px;
   color: var(--basic-black);
 }
 
