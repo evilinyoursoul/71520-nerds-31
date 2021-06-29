@@ -745,6 +745,7 @@ img {
 .catalog-item {
   width: 360px;
   display: grid;
+  grid-template-rows: repeat(3, min-content);
 }
 
 .catalog-item::before {
@@ -794,18 +795,22 @@ img {
   margin-bottom: 32px;
 }
 
+.catalog-item_img {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
 .catalog-item_modal {
+  grid-area: 3 / 1 / 4 / 2;
   background-color: var(--basic-light);
   min-height: 161px;
   padding-bottom: 44px;
   padding-top: 26px;
   padding-right: 53px;
   padding-left: 52px;
-  visibility: hidden;
 }
 
 .catalog-item:hover .catalog-item_modal {
-  visibility: visible;
+  z-index: 1;
 }
 /* Pagination */
 
