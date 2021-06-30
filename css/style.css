@@ -809,7 +809,8 @@ img {
   padding-left: 52px;
 }
 
-.catalog-item:hover .catalog-item_modal {
+.catalog-item:hover .catalog-item_modal,
+.catalog-item:focus-within .catalog-item_modal {
   z-index: 1;
 }
 /* Pagination */
