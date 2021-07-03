@@ -60,6 +60,7 @@
   --button-filter-hover: #dfdfdf;
   --button-filter-active: #d5d5d5;
   --border-button-numbers: #dbdbdb;
+  --range-control-shadow: #cfcfcf;
 
   --social: #e1e1e1;
 }
@@ -648,6 +649,55 @@ img {
   margin-bottom: 16px;
 }
 
+.range-filter {
+  width: 260px;
+  /* margin-top: 49px; */
+}
+
+.range-controls {
+  position: relative;
+  height: 39px;
+  margin-bottom: 14px;
+  padding-top: 39px;
+  padding-right: 22px;
+  padding-left: 22px;
+  background-color: var(--basic-light);
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--border-modal);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--button-center);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--filter-special);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--range-control-shadow);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
 .range-from {
   font-size: 16px;
   line-height: 22px;
@@ -658,6 +708,24 @@ img {
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .filter-list {

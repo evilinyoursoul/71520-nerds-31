@@ -47,16 +47,22 @@
           <fieldset class="fieldset price_fieldset">
             <legend class="filter_legend price_filter_legend">Стоимость:</legend>
             <div>
-              <div>
-                <!-- Тут будет выбор из диапазона -->
-              </div>
-              <div>
-                <label>
-                  <span class="range-from">от</span> <input type="number" name="min-price" value="0">
-                </label>
-                <label>
-                  <span class="range-to">до</span> <input type="number" name="max-price" value="15000">
-                </label>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min tabindex="0""></div>
+                  <div class="toggle toggle-max tabindex="0""></div>
+                </div>
+                <div class="price-controls">
+                  <label>
+                    <span class="range-from">от</span> <input type="number" name="min-price" value="0">
+                  </label>
+                  <label>
+                    <span class="range-to">до</span> <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
               </div>
             </div>
           </fieldset>
