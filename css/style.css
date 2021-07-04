@@ -37,6 +37,7 @@
   --basic-light: #eeeeee;
   --basic-icon: #a6a6a6;
   --basic-text: #283136;
+  --basic-text-opacity-30: rgba(40, 49, 54, 0.3);
   --special-text: #444444; /* footer & placeholder */
   --special-text-opacity-50: rgba(4, 4, 4, 0.5);
   --border-modal: #d7dcde;
@@ -720,7 +721,7 @@ img {
   padding: 10px;
   margin-left: 10px;
   text-align: center;
-  color: #283136;
+  color: var(--basic-text);
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
@@ -802,6 +803,14 @@ img {
   opacity: 1;
 }
 
+.filter-input-checkbox:disabled + label {
+  color: var(--basic-text-opacity-30);
+}
+
+.filter-input-radio:disabled + label {
+  color: var(--basic-text-opacity-30);
+}
+
 .filter-input-radio:disabled + label::before,
 .filter-input-radio:checked:disabled + label::before {
   opacity: 0.1;
@@ -811,6 +820,8 @@ img {
 .filter-input-checkbox:checked:disabled + label::before {
   opacity: 0.1;
 }
+
+
 
 /* Sort */
 
