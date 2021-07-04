@@ -955,6 +955,9 @@ img {
 
 .catalog-item_modal {
   grid-area: 3 / 1 / 4 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--basic-light);
   min-height: 161px;
   padding-bottom: 44px;
@@ -1010,6 +1013,7 @@ img {
 .button-catalog {
   display: flex;
   justify-content: center;
+  width: 56px;
   padding: 17px 72px 15px;
 }
 
