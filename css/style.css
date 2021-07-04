@@ -49,6 +49,7 @@
   --button: #fb565a;
   --button-hover: #e74246;
   --button-active: #d7373b;
+  --button-shadow: rgba(0, 1, 1, 0.1);
 
   --button-center: #00ca74; /* range color tooxr */
   --button-center-hover: #00bc6c;
@@ -60,7 +61,6 @@
 
   --button-filter-hover: #dfdfdf;
   --button-filter-active: #d5d5d5;
-  --button-filter-shadow: rgba(0, 1, 1, 0.1);
   --border-button-numbers: #dbdbdb;
   --range-control-shadow: #cfcfcf;
 
@@ -330,6 +330,7 @@ img {
 
 .button:active {
   background-color: var(--button-active);
+  box-shadow: inset 0px 3px 0px var(--button-filter-shadow);
 }
 
 .button-center {
@@ -1003,7 +1004,6 @@ img {
 .button-filter:active {
   color: var(--basic-black-opacity-30);
   background-color: var(--button-filter-active);
-  box-shadow: inset 0px 3px 0px var(--button-filter-shadow);
 }
 
 .button-form {
