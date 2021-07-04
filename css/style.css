@@ -489,6 +489,18 @@ img {
   margin: auto;
 }
 
+.client-item {
+  opacity: 0.2;
+}
+
+.client-item:hover {
+  opacity: 1;
+}
+
+.client-item:active {
+  opacity: 0.1;
+}
+
 /* Contacts */
 
 .contacts {
