@@ -163,6 +163,13 @@ img {
   color: var(--basic-black);
 }
 
+.site-navigation-link[aria-current="page"] {
+  text-decoration: underline var(--button);
+  text-underline-offset: 13px;
+  text-decoration-thickness: 2px;
+  pointer-events: none;
+}
+
 .cart {
   display: flex;
   flex-wrap: wrap;
