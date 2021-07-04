@@ -60,6 +60,7 @@
 
   --button-filter-hover: #dfdfdf;
   --button-filter-active: #d5d5d5;
+  --button-filter-shadow: rgba(0, 1, 1, 0.1);
   --border-button-numbers: #dbdbdb;
   --range-control-shadow: #cfcfcf;
 
@@ -981,6 +982,7 @@ img {
 .button-filter:active {
   color: var(--basic-black-opacity-30);
   background-color: var(--button-filter-active);
+  box-shadow: inset 0px 3px 0px var(--button-filter-shadow);
 }
 
 .button-form {
