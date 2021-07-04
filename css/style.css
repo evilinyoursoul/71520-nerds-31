@@ -294,6 +294,17 @@ img {
 
 .services {
   margin-bottom: 80px;
+  display: grid;
+  grid-row-gap: 73px;
+}
+
+.services::after {
+  width: 1158px;
+  height: 2px;
+  content: "";
+  background-image: url("../img/icons/horisontal-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .services-list {
@@ -525,16 +536,40 @@ img {
 .clients-list {
   list-style: none;
   text-align: center;
-  /* todo: выравнять картинки по высоте */
   place-items: center;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 46px;
   padding: 0;
   margin: auto;
 }
 
+.clients-list::before {
+  grid-area: 1 / 1 / 2 / 5;
+  width: 1158px;
+  height: 2px;
+  content: "";
+  background-image: url("../img/icons/horisontal-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.clients-list::after {
+  grid-area: 3 / 1 / 4 / 5;
+  width: 1158px;
+  height: 2px;
+  content: "";
+  background-image: url("../img/icons/horisontal-line.svg");
+  background-repeat: repeat (3, 1 00px);
+  background-position: 0 0;
+}
+
 .client-item {
+  width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   opacity: 0.2;
 }
 
@@ -545,6 +580,21 @@ img {
 .client-item:active {
   opacity: 0.1;
 }
+
+.client-item::after {
+  opacity: 1;
+  width: 2px;
+  height: 52px;
+  content: "";
+  background-image: url("../img/icons/vertical-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.client-item:last-child::after {
+  display: none;
+}
+
 
 /* Contacts */
 
