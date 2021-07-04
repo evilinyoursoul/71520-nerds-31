@@ -65,6 +65,9 @@
   --border-button-numbers: #dbdbdb;
   --range-control-shadow: #cfcfcf;
 
+  --sorting-item: rgba(166, 166, 166, 0.2);
+  --sorting-item-active: #231f20;
+
   --catalog-item-background: #f2f2f2;
 
   --social: #e1e1e1;
@@ -878,6 +881,22 @@ img {
   display: flex;
   justify-content: space-between;
   width: 40px;
+}
+
+.sorting-item-button path {
+  fill: var(--sorting-item);
+}
+
+.sorting-item-button:hover path {
+  fill: var(--basic-icon);
+}
+
+.sorting-item-button:active path {
+  fill: var(--sorting-item-active);
+}
+
+.sorting-item-button_active path {
+  fill: var(--sorting-item-active);
 }
 
 /* Catalog */
