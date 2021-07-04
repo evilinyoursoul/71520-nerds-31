@@ -70,7 +70,9 @@
 
   --catalog-item-background: #f2f2f2;
 
-  --social: #e1e1e1;
+  --social-button: #e1e1e1;
+  --social-button-hover: #e74246;
+  --social-button-active: #d7373b;
 }
 
 .page-body {
@@ -590,11 +592,25 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--social);
+  background-color: var(--social-button);
   width: 81px;
   height: 81px;
   border-radius: 50%;
 }
+
+.social-button:hover {
+  background-color: var(--social-button-hover);
+}
+
+.social-button:active {
+  background-color: var(--social-button-active);
+  box-shadow: inset 0px 3px 0px var(--button-shadow);
+}
+
+.social-button:active path {
+  fill: var(--button-text-active);
+}
+
 /* Catalog */
 
 .container-catalog {
