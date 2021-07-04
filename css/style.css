@@ -136,6 +136,44 @@ img {
   margin-bottom: 80px;
 }
 
+.advantages-list {
+  position: relative;
+}
+
+.advantage-item_slide {
+  display: none;
+}
+
+.advantage-item_slide_current {
+  display: block;
+}
+
+.slider-controls {
+  display: flex;
+  width: 88px;
+  height: 18px;
+  position: absolute;
+  margin-top: 317px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  z-index: 20;
+}
+
+.slider-button {
+  border-radius: 50%;
+  border: 1px solid var(--basic-white);
+  background-color: var(--basic-white);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+}
+
+.slider-button_current {
+  background-image: url(../img/icons/slider-current.svg);
+}
+
 .main-navigation {
   font-weight: 500;
   text-transform: uppercase;
