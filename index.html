@@ -153,23 +153,25 @@
         <a class="link contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         <a class="link button" href="#nowhere" hidden>Напишите нам</a>
         <section class="write_us">
-          <h2 class="write_us-title">Напишите нам</h2>
-          <form class="write_us-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <label for="name-field">Ваше имя:</label>
-              <input class="write_us-input" id="name-field" type="text" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p>
-              <label for="email-field">Ваш email:</label>
-              <input class="write_us-input" id="email-field" type="email" name="email" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="comment-field">Текст письма:</label>
-              <textarea class="write_us-textarea" name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea>
-            </p>
-            <button class="button" type="submit">Отправить</button>
-          </form>
-          <button class="modal-close" type="button" hidden>Закрыть</button>
+          <div class="modal-container">
+            <h2 class="write_us-title">Напишите нам</h2>
+            <form class="write_us-form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="name-input">
+                <label class="write_us-input_label" for="name-field">Ваше имя:</label>
+                <input class="write_us-input" id="name-field" type="text" name="name" placeholder="Имя Фамилия">
+              </p>
+              <p class="email-input">
+                <label class="write_us-input_label" for="email-field">Ваш email:</label>
+                <input class="write_us-input" id="email-field" type="email" name="email" placeholder="email@example.com">
+              </p>
+              <p class="comment-input">
+                <label class="write_us-input_label" for="comment-field">Текст письма:</label>
+                <textarea class="write_us-textarea" name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea>
+              </p>
+              <button class="button button-modal" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button" hidden>Закрыть</button>
+        </div>
         </section>
         <img src="img/map.png" width="1440" height="415" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
       </section>
