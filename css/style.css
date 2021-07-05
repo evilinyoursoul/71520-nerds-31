@@ -570,14 +570,17 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.client-item_link {
   opacity: 0.2;
 }
 
-.client-item:hover {
+.client-item_link:hover {
   opacity: 1;
 }
 
-.client-item:active {
+.client-item_link:active {
   opacity: 0.1;
 }
 
