@@ -685,12 +685,14 @@ img {
 
 .write_us-input:focus,
 .write_us-textarea:focus {
+  outline: none;
   color: var(--special-text);
   border-color: var(--basic-black);
 }
 
 .write_us-input:invalid,
 .write_us-textarea:invalid {
+  outline: none;
   color: var(--button-hover);
   border-color: var(--button-hover);
 }
