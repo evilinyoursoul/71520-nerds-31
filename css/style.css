@@ -747,6 +747,32 @@ img {
   grid-area: 5 / 1 / 6 / 2;
 }
 
+.modal-close {
+  position: absolute;
+  top: 80px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icons/close-cross.svg");
+  background-repeat: no-repeat;
+  border: 0;
+  opacity: 0.3;
+  background-color: var(--basic-white);
+  /* z-index: 11; */
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
+}
+
 /* Footer */
 
 .main-footer {
