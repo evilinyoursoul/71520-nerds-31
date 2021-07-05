@@ -142,7 +142,7 @@ img {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  text-align: center;
+  text-align:center;
 }
 
 .advantages {
@@ -889,10 +889,6 @@ img {
   align-content: start;
 }
 
-.page-title_grid {
-  grid-column: 1 / -1;
-}
-
 .page-title {
   color: var(--basic-black);
   font-size: 55px;
@@ -904,6 +900,8 @@ img {
   padding-top: 72px;
   padding-bottom: 108px;
   margin-bottom: 55px;
+  grid-column: 1 / -1;
+
 }
 
 /* Filters */
