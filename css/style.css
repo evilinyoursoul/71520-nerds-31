@@ -603,6 +603,21 @@ img {
 
 .contacts {
   grid-column: 1 / -1;
+  /* position: relative; */
+}
+
+.contacts_small-block {
+  background-color: var(--basic-white);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 269px;
+  height: 258px;
+  /* position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  padding: 50px;
 }
 
 .contacts-title {
@@ -610,6 +625,9 @@ img {
   font-size: 18px;
   line-height: 30px;
   font-weight: 800;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
 }
 
 .address {
@@ -618,6 +636,7 @@ img {
 
 .contacts-phone {
   color: var(--address-text);
+  margin-bottom: 37px;
 }
 
 .modal-container {
