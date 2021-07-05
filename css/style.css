@@ -131,6 +131,16 @@ img {
   background-color: var(--basic-light);
 }
 
+.container-full_width {
+  background-color: var(--basic-light);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 .advantages {
   background-color: var(--basic-light);
   margin-bottom: 80px;
