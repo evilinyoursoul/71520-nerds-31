@@ -131,14 +131,18 @@ img {
   background-color: var(--basic-light);
 }
 
-.container-full_width {
+.container-background {
   background-color: var(--basic-light);
+}
+
+.container-full_width {
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  text-align:center;
 }
 
 .advantages {
@@ -614,6 +618,11 @@ img {
 .contacts {
   grid-column: 1 / -1;
   /* position: relative; */
+}
+
+.map {
+
+  margin: auto;
 }
 
 .contacts_small-block {
