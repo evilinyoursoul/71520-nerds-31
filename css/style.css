@@ -125,6 +125,10 @@ img {
   margin: 0 auto;
 }
 
+.background-for-section {
+  background-color: var(--basic-light);
+}
+
 /* Main header */
 
 .main-header {
@@ -293,6 +297,7 @@ img {
 /* Services */
 
 .services {
+  background-color: var(--basic-light);
   margin-bottom: 80px;
   display: grid;
   grid-row-gap: 73px;
