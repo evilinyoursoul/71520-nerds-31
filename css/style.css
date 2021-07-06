@@ -299,7 +299,6 @@ img {
 /* Services */
 
 .services {
-  background-color: var(--basic-light);
   margin-bottom: 80px;
   display: grid;
   grid-row-gap: 73px;
@@ -538,6 +537,7 @@ img {
 
 .clients {
   min-height: 184px;
+  margin-bottom: 96px ;
 }
 
 .clients-list {
