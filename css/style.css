@@ -357,8 +357,8 @@ img {
 /* Services */
 
 .services {
-  margin-bottom: 80px;
   display: grid;
+  grid-row-gap: 80px;
 }
 
 .services::after {
