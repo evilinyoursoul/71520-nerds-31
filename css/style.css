@@ -260,7 +260,7 @@ img {
 
 .site-navigation-link[aria-current="page"] {
   text-decoration: underline var(--button);
-  text-underline-offset: 13px;
+  text-underline-offset: 22px;
   text-decoration-thickness: 2px;
   pointer-events: none;
 }
@@ -917,13 +917,13 @@ img {
   line-height: 55px;
   font-weight: 500;
   background-color: var(--basic-light);
+  text-align: center;
   margin: 0;
   padding: 0;
-  padding-top: 72px;
+  padding-top: 66px;
   padding-bottom: 108px;
   margin-bottom: 55px;
   grid-column: 1 / -1;
-
 }
 
 /* Filters */
@@ -951,11 +951,11 @@ img {
 }
 
 .layout_fieldset {
-  margin-bottom: 47px;
+  margin-bottom: 45px;
 }
 
 .layout_filter_legend {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .features_fieldset {
@@ -1058,11 +1058,15 @@ img {
 }
 
 .filter-item {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .filter-item:last-child {
   margin-bottom: 0;
+}
+
+.filter-checkbox {
+  margin-bottom: 16px;
 }
 
 .filter-item label {
@@ -1158,21 +1162,22 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  /* margin-right: auto; */
+  margin-right: 229px;
 }
 
 .sort-list {
   list-style: none;
   display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; */
+  gap: 20px;
 }
 
 .sorting-item-link {
   display: block;
-  padding: 5px 12px;
+  padding: 5px;
   color: var(--basic-black);
   font-size: 14px;
   line-height: 18px;
