@@ -17,6 +17,13 @@ contactsClose.addEventListener("click", function (evt) {
   contactsPopup.classList.remove("write_us-show");
 });
 
+contactsForm.addEventListener("submit", function (evt) {
+  if (!contactsEmail.value || !contactsText.value) {
+    evt.preventDefault();
+    contactsPopup.classList.add("write_us-error");
+  }
+});
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (contactsPopup.classList.contains("write_us-show")) {
