@@ -185,6 +185,7 @@ img {
 
 .main-header {
   background-color: var(--basic-light);
+  z-index: 0; /* Без этого активный элемент меню прячется под слайдером */
 }
 
 .advantages {
