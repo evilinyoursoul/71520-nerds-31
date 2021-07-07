@@ -129,6 +129,58 @@ img {
   background-color: var(--basic-light);
 }
 
+/* Buttons Default */
+
+.button {
+  display: inline-block;
+  font: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--button);
+  border: none;
+  padding: 17px 40px 15px 39px;
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+}
+
+.button:active {
+  color: var(--button-text-active);
+  background-color: var(--button-active);
+  box-shadow: inset 0px 3px 0px var(--button-shadow);
+}
+
+.button-center {
+  background-color: var(--button-center);
+}
+
+.button-center:hover {
+  background-color: var(--button-center-hover);
+}
+
+.button-center:active {
+  background-color: var(--button-center-active);
+}
+
+.button-right {
+  background-color: var(--button-right);
+}
+
+.button-right:hover {
+  background-color: var(--button-right-hover);
+}
+
+.button-right:active {
+  background-color: var(--button-right-active);
+}
+
 /* Main header */
 
 .main-header {
@@ -137,7 +189,7 @@ img {
 
 .advantages {
   background-color: var(--basic-light);
-  margin-bottom: 80px;
+  margin-bottom: 87px;
 }
 
 .advantages-list {
@@ -181,14 +233,15 @@ img {
 .main-navigation {
   font-weight: 500;
   text-transform: uppercase;
-  margin-top: 49px;
+  margin-top: 53px;
 
   display: grid;
   grid-template-columns: max-content 1fr min-content;
 }
 
 .main-header-logo {
-  margin-right: 10px;
+  margin-top: -5px;
+  margin-right: 180px;
 }
 
 .site-navigation {
@@ -201,7 +254,7 @@ img {
 
 .site-navigation-link {
   display: block;
-  padding: 26px 22px 9px 23px;
+  padding: 25px 22px 25px 23px;
   color: var(--basic-black);
 }
 
@@ -230,7 +283,7 @@ img {
   display: flex;
   gap: 25px;
   align-items: center;
-  padding: 26px 0px 32px 20px;
+  padding: 25px 0px 25px 20px;
   color: var(--basic-black);
 }
 
@@ -287,7 +340,12 @@ img {
   width: 538px;
   height: 111px;
   padding-top: 78px;
+  margin-top: -13px;
   margin-bottom: 25px;
+}
+
+.button-slogan {
+  padding: 17px 54px 15px 54px;
 }
 
 .slogan-add {
@@ -301,7 +359,6 @@ img {
 .services {
   margin-bottom: 80px;
   display: grid;
-  grid-row-gap: 73px;
 }
 
 .services::after {
@@ -376,56 +433,6 @@ img {
   margin-bottom: 32px;
 }
 
-.button {
-  display: inline-block;
-  font: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--button);
-  border: none;
-  padding: 17px 40px 15px 39px;
-  border-radius: 3px;
-}
-
-.button:hover {
-  background-color: var(--button-hover);
-}
-
-.button:active {
-  color: var(--button-text-active);
-  background-color: var(--button-active);
-  box-shadow: inset 0px 3px 0px var(--button-shadow);
-}
-
-.button-center {
-  background-color: var(--button-center);
-}
-
-.button-center:hover {
-  background-color: var(--button-center-hover);
-}
-
-.button-center:active {
-  background-color: var(--button-center-active);
-}
-
-.button-right {
-  background-color: var(--button-right);
-}
-
-.button-right:hover {
-  background-color: var(--button-right-hover);
-}
-
-.button-right:active {
-  background-color: var(--button-right-active);
-}
-
 /* About */
 
 .about {
@@ -443,13 +450,13 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 32px;
-  padding-top: 73px;
+  padding-top: 66px;
 }
 
 .about-text {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 /* Ерунда какая-то, about-title, about_header... */
@@ -458,6 +465,8 @@ img {
   color: var(--basic-black);
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
   margin: 0;
   padding: 0;
   margin-bottom: 23px;
@@ -479,7 +488,7 @@ img {
   width: 25px;
   height: 2px;
   background: var(--button);
-  margin-right: 7px;
+  margin-right: 11px;
   margin-bottom: 4px;
 }
 
@@ -489,13 +498,22 @@ img {
 
 .about_img {
   order: -1;
+  margin-top: 32px;
   width: 360px;
   height: 208px;
 }
 
 .about_stat_header {
-  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
   padding: 0;
+  margin: 0;
+  padding: 37px 0 31px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
 }
 
 .about-term {
@@ -513,7 +531,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 10px;
-  grid-column-gap: 20px;
+  grid-column-gap: 22px;
   padding: 0;
   margin: 0;
 }
@@ -537,7 +555,7 @@ img {
 
 .clients {
   min-height: 184px;
-  margin-bottom: 96px ;
+  margin-bottom: 66px ;
 }
 
 .clients-list {
@@ -618,13 +636,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 269px;
-  height: 258px;
+  width: 219px;
+  height: 208px;
   position: absolute;
-  left: 25%;
+  left: 24%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 50px;
+  padding: 49px 39px 50px 47px;
 }
 
 .contacts-title {
@@ -634,16 +652,21 @@ img {
   font-weight: 800;
   padding: 0;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .address {
   color: var(--address-text);
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 15px;
 }
 
 .contacts-phone {
   color: var(--address-text);
-  margin-bottom: 37px;
+  margin-bottom: 33px;
 }
 
 .modal-container {
@@ -820,8 +843,9 @@ img {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
-  padding-bottom: 10px;
   margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
 }
 
 .footer-text {
