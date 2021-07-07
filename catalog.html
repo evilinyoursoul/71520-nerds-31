@@ -9,7 +9,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link href="css/outline.css" rel="stylesheet"> -->
+    <link href="css/outline.css" rel="stylesheet">
   </head>
 <body class="page-body">
   <header class="main-header">
@@ -231,35 +231,42 @@
             </li>
           </ul>
         </section>
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
+    </div>
+    <section class="contacts">
+      <div class="container">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts_small-block">
           <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
           <p class="address">наб. Реки Карповки,<br>
           5 лит П, Санкт-Петербург</p>
           <a class="link contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-          <a class="link button" href="#nowhere" hidden>Напишите нам</a>
-          <section class="write_us">
-            <h2 class="write_us-title">Напишите нам</h2>
-            <form class="write_us-form" action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                <label for="name-field">Ваше имя:</label>
-                <input class="write_us-input" id="name-field" type="text" name="name" placeholder="Имя Фамилия">
-              </p>
-              <p>
-                <label for="email-field">Ваш email:</label>
-                <input class="write_us-input" id="email-field" type="email" name="email" placeholder="email@example.com">
-              </p>
-              <p>
-                <label for="comment-field">Текст письма:</label>
-                <textarea class="write_us-textarea" name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea>
-              </p>
-              <button class="button" type="submit">Отправить</button>
-            </form>
-            <button class="modal-close" type="button" hidden>Закрыть</button>
-          </section>
-          <img src="img/map.png" width="1440" height="415" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
-        </section>
-    </div>
+          <a class="link button button-write_us" href="#nowhere" hidden>Напишите нам</a>
+        </div>
+      </div>
+      <section class="write_us">
+        <div class="modal-container">
+          <h2 class="write_us-title">Напишите нам</h2>
+          <form class="write_us-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="name-input">
+              <label class="write_us-input_label write_us-input_label_name" for="name-field">Ваше имя:</label>
+              <input class="write_us-input write_us-input_name" id="name-field" type="text" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p class="email-input">
+              <label class="write_us-input_label write_us-input_label_email" for="email-field">Ваш email:</label>
+              <input class="write_us-input write_us-input_email" id="email-field" type="email" name="email" placeholder="email@example.com">
+            </p>
+            <p class="comment-input">
+              <label class="write_us-input_label write_us-input_label_textarea" for="comment-field">Текст письма:</label>
+              <textarea class="write_us-textarea write_us-input_textarea" name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button button-modal" type="submit">Отправить</button>
+          </form>
+          <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </div>
+      </section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8178647588732!2d30.315192316191222!3d59.96834466666378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2sStudio%20212!5e0!3m2!1sru!2sru!4v1625604096557!5m2!1sru!2sru" width="100%" height="415" style="border:0;" allowfullscreen="" loading="lazy" title="наб. Реки Карповки, 5 лит П, Санкт-Петербург"></iframe>
+      <img class="map" src="img/map.png" width="1440" height="415" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург">
+    </section>
   </main>
   <footer class="main-footer">
     <div class="container container-footer">
@@ -298,5 +305,6 @@
       </div>
     </div>
   </footer>
+  <script src="script/modal.js"></script>
 </body>
 </html>
