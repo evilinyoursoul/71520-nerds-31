@@ -15,11 +15,15 @@ contactsButton.addEventListener("click", function (evt) {
 contactsClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   contactsPopup.classList.remove("write_us-show");
+  contactsPopup.classList.remove("write_us-error");
+
 });
 
 contactsForm.addEventListener("submit", function (evt) {
   if (!contactsEmail.value || !contactsText.value) {
     evt.preventDefault();
+    contactsPopup.classList.remove("write_us-error");
+    contactsPopup.offsetWidth = contactsPopup.offsetWidth;
     contactsPopup.classList.add("write_us-error");
   }
 });
@@ -29,6 +33,7 @@ window.addEventListener("keydown", function (evt) {
     if (contactsPopup.classList.contains("write_us-show")) {
       evt.preventDefault();
       contactsPopup.classList.remove("write_us-show");
+      contactsPopup.classList.remove("write_us-error");
     }
   }
 });
