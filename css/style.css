@@ -557,7 +557,7 @@ img {
 
 .clients {
   min-height: 184px;
-  margin-bottom: 66px ;
+  margin-bottom: 66px;
 }
 
 .clients-list {
@@ -594,9 +594,11 @@ img {
 
 .client-item {
   width: 290px;
+  /* margin-left: -35px; */
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* position: relative; */
 }
 
 .client-item_link {
@@ -612,6 +614,8 @@ img {
 }
 
 .client-item::after {
+  /* position: absolute;
+  left: 100%; */
   opacity: 1;
   width: 2px;
   height: 52px;
@@ -654,10 +658,10 @@ img {
   width: 219px;
   height: 208px;
   position: absolute;
-  left: 24%;
+  left: 25%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 49px 39px 50px 47px;
+  padding: 49px 50px 50px 47px;
   z-index: 2;
 }
 
