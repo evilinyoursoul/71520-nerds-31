@@ -32,7 +32,9 @@
 
 :root {
   --basic-black: #000000;
+  --basic-black-opacity-10: rgba(0, 0, 0, 0.1);
   --basic-black-opacity-30: rgba(0, 0, 0, 0.3);
+  --basic-black-opacity-40: rgba(0, 0, 0, 0.4);
   --basic-white: #ffffff;
   --basic-light: #eeeeee;
   --basic-icon: #a6a6a6;
@@ -69,6 +71,7 @@
   --sorting-item-active: #231f20;
 
   --catalog-item-background: #f2f2f2;
+  --catalog-item-shadow: rgba(0, 0, 0, 0.25);
 
   --social-button: #e1e1e1;
   --social-button-hover: #e74246;
@@ -702,7 +705,7 @@ img {
   bottom: 0;
   left: 0;
   background-color: var(--basic-white);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 40px var(--basic-black-opacity-40);
   display: none;
   z-index: 10;
 }
@@ -1304,7 +1307,7 @@ img {
   width: 360px;
   height: 580px;
   background-color: var(--catalog-item-background);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--basic-black-opacity-10);
   box-sizing: border-box;
   border-radius: 0 0 5px 5px;
 }
@@ -1325,7 +1328,7 @@ img {
 }
 
 .catalog-item:hover {
-  filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 6px 15px var(--catalog-item-shadow));
 }
 
 .catalog-item:hover .catalog-item_img {
