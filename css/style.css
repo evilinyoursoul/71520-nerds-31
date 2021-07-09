@@ -28,8 +28,6 @@
     url("../fonts/robotobold.woff") format("woff");
 }
 
-/* todo: need to recheck */
-
 :root {
   --basic-black: #000000;
   --basic-black-opacity-10: rgba(0, 0, 0, 0.1);
@@ -54,7 +52,7 @@
   --button-text-active: rgba(255, 255, 255, 0.3);
   --button-shadow: rgba(0, 1, 1, 0.1);
 
-  --button-center: #00ca74; /* range color tooxr */
+  --button-center: #00ca74; /* range color too */
   --button-center-hover: #00bc6c;
   --button-center-active: #00aa62;
 
@@ -292,11 +290,11 @@ img {
 }
 
 .site-navigation-link:hover {
-  color: var(--button); /* strange name for color */
+  color: var(--button);
 }
 
 .cart-link:hover {
-  color: var(--button); /* strange name for color */
+  color: var(--button);
 }
 
 .site-navigation-link:active {
@@ -443,7 +441,6 @@ img {
   display: grid;
   grid-template-columns: 2fr 360px;
   column-gap: 149px;
-  /* margin-top: 39px; */
   margin-bottom: 74px;
 }
 
@@ -462,8 +459,6 @@ img {
   padding: 0;
   margin-bottom: 42px;
 }
-
-/* Ерунда какая-то, about-title, about_header... */
 
 .about_header {
   color: var(--basic-black);
@@ -989,7 +984,6 @@ img {
 
 .range-filter {
   width: 260px;
-  /* margin-top: 49px; */
 }
 
 .range-controls {
@@ -1183,7 +1177,6 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  /* margin-right: auto; */
   margin-right: 229px;
 }
 
