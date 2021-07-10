@@ -1065,8 +1065,14 @@ img {
   font-size: inherit;
 }
 
-.price-controls input[type=number]:not(:hover):not(:focus) {
+.price-controls input[type=number] {
   appearance: textfield;
+}
+
+.price-controls input[type="number"]::-webkit-outer-spin-button,
+.price-controls input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .filter-list {
