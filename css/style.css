@@ -564,7 +564,7 @@ img {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 260px);
-  grid-row-gap: 46px;
+  grid-row-gap: 41px;
   grid-column-gap: 40px;
   padding: 0;
   margin: auto;
