@@ -719,7 +719,9 @@ img {
   grid-template-columns: repeat(2,360px);
   grid-template-rows: repeat(7, min-content);
   column-gap: 40px;
-  row-gap: 9px;
+  row-gap: 3px;
+  margin-left: 1px;
+  margin-top: 3px;
 }
 
 .write_us-title {
@@ -727,6 +729,9 @@ img {
   font-size: 45px;
   line-height: 53px;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
 }
 
 .write_us label {
