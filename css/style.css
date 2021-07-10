@@ -653,10 +653,8 @@ img {
   width: 219px;
   height: 208px;
   position: absolute;
-  left: 25%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 49px 50px 50px 47px;
+  top: 55px;
+  padding: 49px 50px 50px 50px;
   z-index: 2;
 }
 
