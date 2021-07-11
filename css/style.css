@@ -1115,7 +1115,7 @@ img {
   width: 25px;
   height: 25px;
   outline: 2px solid var(--default-outline);
-  outline-offset: 4px;
+  outline-offset: 2px;
 }
 
 .filter-input-radio:focus:not(:focus-visible) + label::after {
@@ -1157,7 +1157,7 @@ img {
   width: 25px;
   height: 23px;
   outline: 2px solid var(--default-outline);
-  outline-offset: 4px;
+  outline-offset: 2px;
 }
 
 .filter-input-checkbox:focus:not(:focus-visible) + label::after {
