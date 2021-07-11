@@ -1129,8 +1129,16 @@ img {
   opacity: 1;
 }
 
+.filter-input-radio:focus + label::before {
+  opacity: 1;
+}
+
 .filter-input-checkbox + label:hover::before,
 .filter-input-checkbox:checked + label:hover::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:focus + label::before {
   opacity: 1;
 }
 
